@@ -5,14 +5,9 @@ import datetime
 import xml.etree.ElementTree as ET
 from shutil import copyfile
 
-## Cosas para el proxy
-proxies = {
-  'http': 'http://10.82.0.173:8080',
-  'https': 'http://10.82.0.173:8080',
-}
 
-ProxyRegular = "10.82.0.173:8080"
-ProxyOffice365 = "10.82.15.99:3128"
+ProxyRegular = "10.10.10.10:8080"
+ProxyOffice365 = "DIRECT"
 ProxyJsonFile = "/etc/cron.hourly/proxy.json"
 Office365URL = "https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7"
 OfficePacFile = "/var/www/html/office365.pac"
